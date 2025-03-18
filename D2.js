@@ -71,7 +71,9 @@ if (totalShoppingCart2 < 50) {
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const a = 5;
+const b = 3;
+const c = 4;
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -97,10 +99,10 @@ if (result3 === 0) {
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
   */
 let val = 3;
-if (val < 10 && val > 5) {
-  console.log("Meno di 10");
-} else if (val < 5) {
+if (val < 5) {
   console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
 } else {
   console.log("Uguale a 10 o maggiore");
 }
@@ -115,8 +117,8 @@ const me = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
-  city: "Toronto",
 };
+me.city = "Toronto";
 console.log(me);
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
@@ -128,6 +130,8 @@ console.log(me);
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
+
+me.skills.pop();
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
