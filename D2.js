@@ -2,8 +2,8 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-const largest = 1;
-const smallest = 10;
+const largest = 10;
+const smallest = 1;
 if (largest > smallest) {
   console.log(largest + " è il numero più grande");
 }
@@ -28,7 +28,7 @@ const dividend1 = 25;
 const divisor1 = 5;
 const result1 = dividend1 % divisor1;
 if (result1 === 0) {
-  console.log("La divisione da resto 0");
+  console.log("La divisione da resto " + result1);
 }
 
 /* ESERCIZIO 4
@@ -39,7 +39,7 @@ const minuend = 10;
 const subtracting = 2;
 let result2 = minuend - subtracting;
 if (result2 === 8) {
-  console.log("La sottrazione da 8");
+  console.log("La sottrazione da " + result2);
 }
 
 /* ESERCIZIO 5
@@ -144,3 +144,6 @@ console.log(lista);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
+
+lista.splice(lista.length - 1, 1, 100);
+console.log(lista);
